@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Salarithm - 연봉 예측 시스템</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Salarithm - 맞춤형 연봉 예측</h2>
+    <form id="salaryForm">
+      <label for="university">대학교</label>
+      <input id="university" name="university" type="text" required aria-label="대학교" />
+
+      <label for="major">전공</label>
+      <input id="major" name="major" type="text" required aria-label="전공" />
+
+      <label for="gpa">학점</label>
+      <input id="gpa" name="gpa" type="number" step="0.01" required aria-label="학점" />
+
+      <label for="experience">경력연수</label>
+      <input id="experience" name="experience" type="number" required aria-label="경력연수" />
+
+      <label for="certification">자격증</label>
+      <input id="certification" name="certification" type="text" aria-label="자격증" />
+
+      <label for="languageScore">어학성적</label>
+      <input id="languageScore" name="languageScore" type="number" aria-label="어학성적" />
+
+      <button type="submit">연봉 예측하기</button>
+    </form>
+
+    <div class="result" id="result"></div>
+    <div class="chart">
+      <canvas id="salaryChart"></canvas>
+    </div>
+    <div class="recommendation" id="recommendation" style="display:none;"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
