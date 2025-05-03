@@ -1,4 +1,4 @@
-const BASE_URL = 'http://127.0.0.1:8000'; // 서버 주소
+const BASE_URL = 'https://salarithm-api.onrender.com/';
 
 document.getElementById('salaryForm').addEventListener('submit', async function(e) {
   e.preventDefault();
